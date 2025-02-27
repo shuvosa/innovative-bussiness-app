@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "38e1b696f919d57e86e8ff9b562db3d7"
+application_url = "https://women-invalid-bahrain-cities.trycloudflare.com"
+embedded = true
+name = "innovative-business-app"
+handle = "innovative-business-app-12"
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "saenterprize.myshopify.com"
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://women-invalid-bahrain-cities.trycloudflare.com/auth/callback",
+  "https://women-invalid-bahrain-cities.trycloudflare.com/auth/shopify/callback",
+  "https://women-invalid-bahrain-cities.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
